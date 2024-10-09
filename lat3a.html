@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+        var i;
+        function atas() {
+            document.getElementById("judul").innerText="Welcome";
+        }
+        
+    </script>
+</head>
+<body style="background-image:url(img/onTheBike.jpg); background-position-x: center; background-repeat: no-repeat;">
+    <h1 id="judul" onclick="atas();">Hello world</h1>
+    <button onclick="bawah();">Ganti Judul</button>
+    <script>
+        document.write("<h1>Hello World</h1>");
+    </script>
+</body>
+<script>
+    function bawah() {
+        document.getElementById("judul").innerText="Terima Kasih";
+    }
+
+</script>
+</html>

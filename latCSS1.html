@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+    <style>
+
+    </style>
+    <script>
+        function ubahJudul() {
+            document.getElementById("judul").innerText="SELAMAT";
+        }
+    </script>
+</head>
+<body>
+    <header style="border-color: black; border-width:thin; background-color: yellow;">
+        <h1 id="judul" style="color: red;">LATIHAN 2</h1>
+        <p>Hello ini adalah latihan PIBS yang ke-2</p>
+    </header>
+    <nav style="background-color: cyan;">
+        <a href="#">code convention</a> | <a href="#">HTML comments</a> | <a href="#">Stylesheet</a> | <a href="#">Script</a>
+    </nav>
+    <main style="background-color: gray;">
+        <article style="background-color: brown;">
+            <p>Pada latihan ini kita akan mencoba:
+                <ol>
+                    <li>Penulisan code sesuai convention</li>
+                    <li>Membuat HTML comments </li>
+                    <li>Loading Style Sheet</li>
+                    <li>Loading javascript</li>
+                </ol>
+            </p>
+        </article>
+        <article>
+            <p>Pada latihan ini kita akan mencoba:
+                <ol>
+                    <li>Penulisan code sesuai convention</li>
+                    <li>Membuat HTML comments </li>
+                    <li>Loading Style Sheet</li>
+                    <li>Loading javascript</li>
+                </ol>
+            </p>
+        </article>
+    </main> 
+    <button onclick="ubahJudul();">Ganti judul</button>   
+</body>
+</html>

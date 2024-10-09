@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 DOM 4</title>
+    <style>
+        .merah {
+            background-color: red;
+            width: fit-content;
+        }
+        .biru {
+            background-color: blue;
+            width: fit-content;
+            color: white;
+        }
+    </style>
+    <script>
+        var status=0;
+        function ubah() {
+            if(status==0) {
+                document.getElementById("noSatu").className="biru";
+                status=1;
+            }
+            else {
+                document.getElementById("noSatu").className="merah";
+                status=0;
+            }
+        }
+    </script>
+        
+</head>
+<body>
+    Percobaan innerText
+    <div id="noSatu" class="merah">Teks div awal</div>
+    Teks ini disisip dengan <span id="noDua" class="merah">Teks span awal</span> dengan class awal
+    <div id="noTiga" class="biru">Teks div akhir</div>
+    <button onclick="ubah();">Click Me</button>
+</body>
+</html>

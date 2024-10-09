@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 DOM 3</title>
+    <script>
+        function ubah() {
+            document.getElementsByClassName("awal")[0].innerText='Teks Baru';
+        }
+    </script>
+        
+</head>
+<body>
+    Percobaan innerText
+    <div id="noSatu" class="awal">Teks div awal</div>
+    Teks ini disisip dengan <span id="noDua" class="awal">Teks span awal</span> dengan class awal
+    <div id="noTiga" class="akhir">Teks div akhir</div>
+    <button onclick="ubah();">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 DOM 2</title>
+    <script>
+        function ubah() {
+            var divTambahan = document.createElement('div');
+            divTambahan.id="idDivBaru";
+            divTambahan.innerText = "ini DIV tambahan";
+            document.body.appendChild(divTambahan);
+        }
+    </script>
+        
+</head>
+<body>
+    <div id="noSatu" class="awal">Teks Awal</div>
+    <button onclick="ubah();">Click Me</button>
+</body>
+</html>

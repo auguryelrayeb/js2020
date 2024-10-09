@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 CSS Child Selector 3</title>
+    <style>
+        ul#navigasi>li {
+            background-color:burlywood;
+            width: 100px;
+            list-style-type: none;
+        }
+        ul#navigasi li>ul {
+            background-color: cadetblue;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="navigasi">
+        <li>Menu 1</li>
+        <li>Menu 2
+            <ul>
+                <li>Sub Menu 2a</li>
+                <li>Sub Menu 2b</li>
+                <li>Sub Menu 2c</li>
+            </ul>
+        </li>
+        <li>Menu 3</li>
+        <li>Menu 4</li>
+    </ul>
+</body>
+</html>

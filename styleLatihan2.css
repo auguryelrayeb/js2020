@@ -1,0 +1,11 @@
+body{background-color: cyan;}
+h1{color: tomato;}
+ol{color: blue;}
+#teks1{
+    text-align: left;
+    background-color:cyan;
+}
+#teks2{
+    text-align: right;
+    background-color:yellow;
+}

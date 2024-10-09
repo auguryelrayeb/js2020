@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var nilai;
+        nilai=90;
+        document.write("Nilai= " + nilai + "<br/>");
+        nilai="A";
+        document.write("Nilai= " + nilai + "<br/>");
+        nilai=false;
+        document.write(nilai + "<br/><br/>");
+
+        var numNilaiTugas;
+        var numNilaiUTS;
+        var numNilaiUAS;
+        var numNilaiTotal;
+        var strNama;
+        var boolPilihan;
+
+        numNilaiTugas=100;
+        numNilaiUTS=80;
+        numNilaiUAS=90;
+        numNilaiTotal=0.3*numNilaiTugas+0.3*numNilaiUTS+0.4*numNilaiUAS;
+        document.write("Nilai Total = " + numNilaiTotal + "<br/>");
+
+        numNilaiUAS=95;
+        numNilaiTotal=0.3*numNilaiTugas+0.3*numNilaiUTS+0.4*numNilaiUAS;
+        document.write("Nilai Total = " + numNilaiTotal + "<br/>");
+
+        document.write("<hr><br/>");
+        document.write("ARRAY<br/>");
+
+        var arrGadget=[];
+        arrGadget[0]="Smartphone";
+        arrGadget[2]="Laptop";
+        arrGadget[3]="External Storage";
+        document.write(arrGadget + "<br/>");
+        arrGadget[1]="Headset";
+        document.write(arrGadget + "<br/><br/>");
+
+        var arrTeman=["Marcello", "Johan", "Johannes", "Chaerul", "Ratno", "Deden"];
+        document.write(arrTeman + "<br/>");
+        document.write(arrTeman.length + "<br/>");
+
+        var arrDaftarNilai = ["INS207", "PIBS", 4, "A", true, "INS205", "Mobile Programming", 3, "B", true];
+        document.write(arrDaftarNilai + "<br/>");
+
+        arrTeman.push("Ruffman");
+        document.write(arrTeman + "<br/>");
+        document.write(arrTeman.length + "<br/><br/>");
+
+        for(idx in arrTeman) {
+            document.write(idx + " " + arrTeman[idx] + "<br/>");
+        }
+        document.write("<br/>");
+        for(var i=0; i<arrTeman.length; i++) {
+            document.write(i + " " + arrTeman[i] + "<br/>");
+        }
+        
+        document.write("<hr><br/>");
+
+        var x=0;
+        while(x<arrDaftarNilai.length) {
+            document.write(x + " " + arrDaftarNilai[x] + "<br/>");
+            x++;
+        }
+
+    </script>
+
+</body>
+
+</html>
